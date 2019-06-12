@@ -1,3 +1,3 @@
 spring:
   application:
-    name: springcloud-config-eureka-client
+    name: optimizecloud-config-eureka-client

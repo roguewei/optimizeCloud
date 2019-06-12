@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: optimizecloud-config-provider-client

@@ -18,4 +18,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/roguewei/microservicecloud-config.git
+          uri: https://github.com/roguewei/optimizeCloudConfig.git
