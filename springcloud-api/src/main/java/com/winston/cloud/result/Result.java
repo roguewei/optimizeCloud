@@ -19,6 +19,11 @@ public class Result<T> implements Serializable {
     String message;
     T data;
 
+    // 调用restTemplate返回自定义类型需要实现空参构造函数
+    public Result(){
+
+    }
+
     private Result(T data){
         this.status = 200;
         this.count = 1;
