@@ -24,10 +24,12 @@ public class ConsumerServiceImpl implements IConsumerService {
     private RestTemplate restTemplate;
 
     public Result getDept() {
+        // 使用服务名需要在设置restTemplate时添加注解@LoadBalanced
         return restTemplate.getForObject(cloudConfig.getPeoviderurl()+"/dept", Result.class);
     }
 
     public Result getDept(Long id) {
+        // 使用服务名需要在设置restTemplate时添加注解@LoadBalanced
         return restTemplate.getForObject(cloudConfig.getPeoviderurl()+"/dept/"+id, Result.class);
     }
 }
